@@ -129,7 +129,7 @@ const Detail = () => {
     );
   } else {
     return (
-      <div className=" h-[80vh] w-screen flex justify-center items-center">
+      <div className=" min-h-[80vh] w-screen flex justify-center items-center">
         <VscLoading className=" animate-spin text-6xl" />
       </div>
     );
