@@ -22,14 +22,14 @@ const Home = () => {
     getMeals();
   }, []);
   return (
-    <section className=" min-h-screen w-full flex items-center justify-center lg:pt-0 md:pt-20 pt-44 pb-10 md:pb-0">
+    <section className=" min-h-screen w-full flex items-center justify-center pt-40 pb-20">
       {loading ? (
         <GiSpinningRibbons className=" animate-spin text-4xl" />
       ) : (
         <motion.div
           animate={{ opacity: 1, transition: { duration: 1 } }}
           initial={{ opacity: 0 }}
-          className="  space-y-16 lg:w-[60%] md:w-[80%] px-10 md:px-0">
+          className="  space-y-16 lg:w-[70%] md:w-[80%] px-10 md:px-0">
           <form
             action=""
             className=" bg-slate-200 flex items-center justify-between px-4 mx-auto w-64  py-3 rounded-lg"

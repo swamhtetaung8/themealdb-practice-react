@@ -9,7 +9,7 @@ const Meal = () => {
       animate={{ y: 0 }}
       initial={{ y: "100vh" }}
       transition={{ duration: 1 }}
-      className=" grid lg:grid-cols-6 grid-cols-1 md:grid-cols-3 gap-10 justify-items-center place-items-start container mx-auto py-10 min-h-screen pt-32">
+      className=" grid lg:grid-cols-5 grid-cols-1 md:grid-cols-3 gap-10 justify-items-center place-items-start container mx-auto py-10 min-h-screen pt-32">
       {meals?.length > 0 ? (
         meals.map((meal) => <MealCard key={meal.idMeal} meal={meal} />)
       ) : (
