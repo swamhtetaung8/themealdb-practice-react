@@ -12,7 +12,7 @@ const Navbar = () => {
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
       transition={{ duration: 1 }}
-      className=" py-4 px-10 fixed w-full bg-blue-300 shadow-sm z-50">
+      className=" py-4 px-10 fixed w-full bg-blue-200 shadow-sm z-50">
       <ul className=" flex items-center justify-between">
         <Link to="/">
           <li>
@@ -57,7 +57,10 @@ const Navbar = () => {
       justify-center items-center ease-in md:hidden transition-all duration-[0.3s] ${
         menu ? "right-0" : "right-[-100vw]"
       }`}>
-          <Link to="/" className=" hover:text-blue-500">
+          <Link
+            to="/"
+            className=" hover:text-blue-500"
+            onClick={() => setMenu(!menu)}>
             Home
           </Link>
           <Link
