@@ -32,7 +32,7 @@ const Home = () => {
           className="  space-y-16 lg:w-[70%] md:w-[80%] px-10 md:px-0">
           <form
             action=""
-            className=" bg-slate-200 flex items-center justify-between px-4 mx-auto w-64  py-3 rounded-lg"
+            className=" bg-slate-200 flex items-center justify-between px-4 mx-auto md:w-64 w-full  py-3 rounded-lg"
             onSubmit={handleSubmit}>
             <input
               type="text"
