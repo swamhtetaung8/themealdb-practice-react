@@ -53,7 +53,7 @@ const Detail = () => {
 
   if (!detailLoad) {
     return (
-      <div className=" flex flex-col-reverse lg:flex-row-reverse container mx-auto gap-10 py-10 md:min-h-[90vh] items-start">
+      <div className=" flex flex-col-reverse lg:flex-row-reverse container mx-auto gap-10 py-10 md:min-h-screen items-start md:pt-52 pt-32">
         <motion.div
           animate={{ opacity: 1 }}
           initial={{ opacity: 0 }}
@@ -63,8 +63,8 @@ const Detail = () => {
             <button
               className={`${
                 twoBtn === "instructions"
-                  ? "border-2 text-white bg-slate-800 p-2 rounded-lg hover:scale-105 transition-all duration-100"
-                  : "border-2 text-slate-800 bg-white p-2 rounded-lg hover:scale-105 transition-all duration-100"
+                  ? "border-2 border-blue-400 text-white bg-blue-400 p-2 rounded-lg hover:scale-105 transition-all duration-100"
+                  : "border-2 border-blue-400 text-blue-400 bg-white p-2 rounded-lg hover:scale-105 transition-all duration-100"
               }`}
               onClick={() => setTwoBtn("instructions")}>
               Instructions
@@ -72,8 +72,8 @@ const Detail = () => {
             <button
               className={`${
                 twoBtn === "instructions"
-                  ? "border-2 text-slate-800 bg-white p-2 rounded-lg hover:scale-105 transition-all duration-100"
-                  : "border-2 text-white bg-slate-800 p-2 rounded-lg hover:scale-105 transition-all duration-100"
+                  ? "border-2 border-blue-400 text-blue-400 bg-white p-2 rounded-lg hover:scale-105 transition-all duration-100"
+                  : "border-2 border-blue-400 text-white bg-blue-400 p-2 rounded-lg hover:scale-105 transition-all duration-100"
               }`}
               onClick={() => setTwoBtn("ingredients")}>
               Ingredients
