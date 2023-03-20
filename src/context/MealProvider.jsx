@@ -8,7 +8,7 @@ export const MealProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
   const getMeals = async () => {
     const api = await fetch(
-      "https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood"
+      "https://www.themealdb.com/api/json/v1/1/filter.php?c=Chicken"
     );
     const { meals } = await api.json();
     // console.log(meals);
